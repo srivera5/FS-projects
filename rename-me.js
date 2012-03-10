@@ -1,3 +1,34 @@
+//Initial Variables
+var preparedBreakfastGreeting = "Breakfast is served.",
+	mouthsToServe = 2,
+	needToEat = ["napkins", "forks", "knives"];
+	
+//#1 Procedure
+var getEggs = function (eggs) {
+	if (eggs > 2) {
+		console.log ("It's french toast time!");
+	} else {
+		console.log ("WTH!");
+	};
+};
+	getEggs(3);
+
+//#2 Boolean Function
+var useSyrup = function (haveMapleSyrup, haveAgaveNectar) {
+	var syrupResponse;
+		if (haveMapleSyrup === true) {
+			syrup = "maple syrup";
+		} else if (haveMapleSyrup === false && haveAgaveNectar === true) {
+					syrup = "agave nectar";
+				} else {
+				  console.log("We're doomed! No syrup or subsitute!");
+		}
+var syrupResponse = console.log("For a topping, we'll use this " + syrup + ".");
+	return syrup;	
+		};
+useSyrup(false, true);
+	console.log("Mmmm, " + syrup + ".");
+//#3 Number Function
 var getBread = function (slicesToSoak) {
 	var amountEach = slicesToSoak - 2;
 	return amountEach;
@@ -10,18 +41,12 @@ var getBread = function (slicesToSoak) {
 var amountEach = getBread(4);
 	console.log( amountEach + " for me and " + amountEach + " for you!");
 
-var getEggs = function (eggs) {
-	if (eggs > 2) {
-		console.log ("It's french toast time!");
-	} else {
-		console.log ("WTH!");
-	};
-};
-	getEggs(3);
-	
+//#5 String Function
 var morningGreeting = function (name, timeOfDay) {
-    var greeting = timeOfDay + "," + name + "! ";
+    var greeting = timeOfDay + ", " + name + "! ";
     return greeting;
 };
 var fullGreeting = morningGreeting("Leo", "Good morning");
- 	console.log(fullGreeting + "Breakfast is served.");
+ 	console.log(fullGreeting + preparedBreakfastGreeting);	
+
+console.log("Cooking for " + mouthsToServe + " sure did take a lot of time. Anyway, can you grab us some " + needToEat[0] + "?");
