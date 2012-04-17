@@ -31,4 +31,14 @@ var irsRefund = function (x) {
 
 paycheck(1000);
 
+//NOTE! Revise paycheck function to include math on bills as such below:
+var budget = function (bills) {
+  if (carbill<200) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
+console.log(bill(199));
+console.log("After I pay this off I can still go shopping.");
