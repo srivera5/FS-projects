@@ -18,4 +18,17 @@ var outfitWorthy = function (brandName,color) {
 };
 outfitWorthy("Betsey Johnson", "hotpink");
 
+//shopping spree/allowance
+
+var paycheck = function (x) {
+  return x * x;
+};
+
+var irsRefund = function (x) {
+  return paycheck(x) * x;
+  console.log("I have " + x + "spend!");
+};
+
+paycheck(1000);
+
 
