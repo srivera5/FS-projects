@@ -2,3 +2,20 @@
 //Story plot: shopping adventure
 //SDI Project 3
 
+//First shop at the mall. Decide if I like a dress.
+
+var outfitWorthy = function (brandName,color) {
+  
+    if (brandName === "Betsey Johnson") {
+      if (color === 'skullblack' || color === 'cottoncandyblue') {
+            console.log("OMFG! Take my credit card now!");
+      } else {
+		console.log("Meh. I can do better.");
+      }
+    } else {
+      return false;
+    }
+};
+outfitWorthy("Betsey Johnson", "hotpink");
+
+
