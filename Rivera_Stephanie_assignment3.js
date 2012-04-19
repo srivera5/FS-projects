@@ -2,6 +2,24 @@
 //Story plot: shopping adventure
 //SDI Project 3
 
+//Object with Accessor
+var myself = {
+	hobby: "shopping",
+	bored: true,
+	sayHobby: function () {
+		if(this.bored === true) {
+		console.log("I'm so bored. I think I'll go " + this.hobby);
+		} else {
+		console.log("I'll just watch some more tv.");
+		}
+	};
+myself.sayHobby();
+setHobby = "shopping with a friend.";
+myself.sayHobby();
+
+
+
+
 //First shop at the mall. Decide if I like a dress.
 
 var outfitWorthy = function (brandName,color) {
