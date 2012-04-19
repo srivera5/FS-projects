@@ -6,12 +6,15 @@
 var myself = {
 	hobby: "shopping", //Property: String
 	bored: true, //Property: Boolean
+	numTvs: 2, //Property: Number
+	shows: ["Rick Steves", "Big Bang Theory", "The Office"], //Property:Array
 	sayHobby: function () { //Method with no return
 		if(this.bored === true) { //Conditional 
 		console.log("I'm so bored. I think I'll go " + this.hobby);
-		} else {
-		console.log("I'll just watch some more tv.");
-		}
+		} else if (numTvs>=1) { //Nested Conditional
+		console.log("I'll just watch some more " + this.shows[2] + ".");
+		} else { 
+		console.log("I guess I'll go study.");
 	}
 }
 myself.sayHobby();
@@ -43,12 +46,12 @@ var friend3 = {
 
 var friends = [friend1, friend2, friend3];
 
-var call = function(invite) {
+function call(invite) { //Function
 	return invite.answer(); }
 
-var listOfFriends = function() {
+function listOfFriends() { 
 	var i = friends.length;
-	for(i=0; i<friends.length; i++) {
+	for(i=0; i<friends.length; i++) { //For Loop
 	call(friends[i]); }
 };
 listOfFriends();
