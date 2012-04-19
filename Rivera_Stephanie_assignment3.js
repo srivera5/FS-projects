@@ -4,17 +4,18 @@
 
 //Object with Accessor
 var myself = {
-	hobby: "shopping",
-	bored: true,
-	sayHobby: function () {
-		if(this.bored === true) {
+	hobby: "shopping", //Property: String
+	bored: true, //Property: Boolean
+	sayHobby: function () { //Method with no return
+		if(this.bored === true) { //Conditional 
 		console.log("I'm so bored. I think I'll go " + this.hobby);
 		} else {
 		console.log("I'll just watch some more tv.");
 		}
-	};
+	}
+}
 myself.sayHobby();
-setHobby = "shopping with a friend.";
+myself.hobby ="shopping with a friend.";
 myself.sayHobby();
 
 
