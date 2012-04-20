@@ -2,7 +2,14 @@
 //Story plot: shopping adventure
 //SDI Project 3
 
-//Global variables
+//JSON Data
+var handleData = function (json) {
+	for(var i=0; i<json.cc.length; i++) {
+	var limits = json.cc[i];
+	console.log("My " + limits.type + " has a limit of " + limits.limit);
+	};
+};
+handleData(json);
 
 //Object with Accessor: Story begins with deciding what to do
 var myself = {
